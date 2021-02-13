@@ -1,0 +1,70 @@
+<html lang="en">
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link href="style.css" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <title>Personal Portfolio</title>
+	</head>
+<body>
+	<header>
+		<div class="head-bar"></div>
+		    <nav id="navbar">
+				<a href="#welcome-section" class="nav-link">About</a>
+				<a href="#projects" class="nav-link">Work</a>
+				<a href="#contacts" class="nav-link">Contact</a>
+		    </nav>
+		    <script type = "text/javascript" >
+	    		$(document).ready(function(){
+	  			$(window).scroll(function(){
+	  			var scroll = $(window).scrollTop();
+		  		if (scroll > 300) {
+		    		$("header").css("background" , "blue");
+		  		}
+
+		  		else{
+			  		$("header").css("background" , "#333");  	
+		  		}
+	  			})
+				})
+			</script>
+		</div>	
+    </header>
+  
+	<main>
+	    <section style="background-image: url(Images/bg.jpg);" id="welcome-section" class="main-section">
+		    <h1>Marc Lloyd Runas</h1>
+		    <p>BSIT Student</p>
+	    </section>
+	    
+	    <section id="projects" class="main-section">
+			<h2 style="font-size: 50px;">Projects</h2>
+			<div id="projects-content">
+				<a href="https://marclloydrunas.github.io/ImageryVault_CIT14Project/" target="_blank" class="project-tile"><img src="Images/ecommerce.png" alt="E-Commerce page preview">E-Commerce Page</a>
+				<a href="https://marclloydrunas.github.io/Tribute-Page/"target="_blank" class="project-tile"><img src="Images/tribute.png" alt="tribute page preview">Tribute Page</a>
+				<a href="https://marclloydrunas.github.io/Survey-Form/" target="_blank" class="project-tile"><img src="Images/survey.png" alt="survey form preview">Survey Form</a>
+				<a href="https://marclloydrunas.github.io/Product-Landing-Page/" target="_blank" class="project-tile"><img src="Images/product.png" alt="product landing page preview">Product Landing Page</a>
+				<a href="https://marclloydrunas.github.io/Technical-Documentation-Page/" target="_blank" class="project-tile"><img src="Images/doc.png" alt="technical documentation page preview">Technical Documentation Page</a>
+				<a href="https://marclloydrunas.github.io/Resume/" target="_blank" class="project-tile"><img src="Images/resume.png" alt="resume page preview">Resume Page</a>
+	        </div>
+	    </section>
+	    
+	    <section id="contacts" class="main-section">
+			<h2>Contacts</h2>
+			<p>For more info</p>
+			<div id="contacts-content">
+		        <div id="fcbk"><a href="https://facebook.com/freecodecamp" class="fa fa-facebook"target="_blank"></a></div>
+		        <div id="github"><a href="https://github.com/freecodecamp" class="fa fa-github"target="_blank" id="profile-link"></a></div>
+		        <div id="twitter"><a href="https://twitter.com/freecodecamp" class="fa fa-twitter"target="_blank"></a></div>
+		        <div id="email"><a href="mailto:marcsahoy477@gmail.com" class="fa fa-google"target="_blank"></a></div>
+		        <div id="tel"><a href="tel:09289223750" target="_blank" class="fa fa-phone"></a></div>
+	      	</div>
+	    </section>
+	</main>
+  
+	<footer>
+	    <p><em>code by: Marc Lloyd Runas</em></p>
+	    <p>CC14</p>
+	</footer>
+</body>
+</html>
